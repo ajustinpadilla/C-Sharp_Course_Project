@@ -8,7 +8,7 @@ namespace ConsoleNumbers
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("What number would you like to use?");
             int specialNum = Convert.ToInt32(Console.ReadLine());

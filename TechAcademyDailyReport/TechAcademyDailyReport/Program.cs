@@ -17,7 +17,7 @@ namespace TechAcademyDailyReport
             Console.WriteLine("What course are you on?");
             string CourseOn = Console.ReadLine();
             Console.WriteLine("What page number?");
-            int Page = Console.ReadLine();
+            int Page = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Do you need help with anything? Please answer \"true\" or \"false.\"");
             bool NeedHelp = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine("Were there any positive experiences you’d like to share? Please give specifics.");
@@ -25,7 +25,7 @@ namespace TechAcademyDailyReport
             Console.WriteLine("Is there any other feedback you’d like to provide? Please be specific.");
             string Feedback = Console.ReadLine();
             Console.WriteLine("How many hours did you study today?");
-            int StudyHours = Console.ReadLine();
+            int StudyHours = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Thank you for your answers. An Instructor will respond to this shortly. Have a great day!");
             Console.Read();
         }
