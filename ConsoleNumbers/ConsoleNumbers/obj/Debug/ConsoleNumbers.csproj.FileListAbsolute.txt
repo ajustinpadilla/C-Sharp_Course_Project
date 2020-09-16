@@ -1,0 +1,7 @@
+C:\Users\ajust\source\repos\ConsoleNumbers\ConsoleNumbers\bin\Debug\ConsoleNumbers.exe.config
+C:\Users\ajust\source\repos\ConsoleNumbers\ConsoleNumbers\bin\Debug\ConsoleNumbers.exe
+C:\Users\ajust\source\repos\ConsoleNumbers\ConsoleNumbers\bin\Debug\ConsoleNumbers.pdb
+C:\Users\ajust\source\repos\ConsoleNumbers\ConsoleNumbers\obj\Debug\ConsoleNumbers.csprojAssemblyReference.cache
+C:\Users\ajust\source\repos\ConsoleNumbers\ConsoleNumbers\obj\Debug\ConsoleNumbers.csproj.CoreCompileInputs.cache
+C:\Users\ajust\source\repos\ConsoleNumbers\ConsoleNumbers\obj\Debug\ConsoleNumbers.exe
+C:\Users\ajust\source\repos\ConsoleNumbers\ConsoleNumbers\obj\Debug\ConsoleNumbers.pdb
