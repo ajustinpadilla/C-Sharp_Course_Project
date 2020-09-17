@@ -32,6 +32,28 @@ namespace DoWhileBool
             }
 
             while (!keepGoing);
+
+            Console.WriteLine("\nHow many animals are in the zoo?");
+            int animalGuess = Convert.ToInt32(Console.ReadLine());
+            bool keepGoing1 = true;
+
+            while (keepGoing1)
+            {
+                switch(animalGuess)
+                {
+                    case 15:
+                        Console.WriteLine("You guessed " + animalGuess + ". That's correct!! Thank you for playing");
+                        keepGoing1 = false;
+                        break;
+
+                    default:
+                        Console.WriteLine("You guessed " + animalGuess + ". That is incorrect! Please try again.");
+                        Console.WriteLine("\nHow many animals are in the zoo?");
+                        animalGuess = Convert.ToInt32(Console.ReadLine());
+                        break;
+                }
+            }
+
             Console.Read();
         }
     }
