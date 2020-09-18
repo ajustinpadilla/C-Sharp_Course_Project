@@ -10,58 +10,67 @@ namespace ForLoop
     {
         static void Main()
         {
-            //List<string> names = new List<string>() { "Mark", "Sally", "Jake", "Jennifer" };
+            string[] names = new string[] { "Mark", "Sally", "Jake", "Jennifer" };
 
-            //Console.WriteLine("Please enter a last name: ");
-            //string lName = Console.ReadLine();
+            Console.WriteLine("Please enter a last name: ");
+            string lName = Console.ReadLine();
 
-            //for (int i = 0; i < names.Count; i++)
-            //{
-            //    string fullName = names[i] + " " + lName;
-            //    names[i] = fullName;
-            //}
-            //foreach (string name in names)
-            //{
-            //    Console.WriteLine(name);
-            //}
+            for (int i = 0; i < names.Length; i++)
+            {
+                string fullName = names[i] + " " + lName;
+                names[i] = fullName;
+            }
+            foreach (string name in names)
+            {
+                Console.WriteLine(name);
+            }
+            bool keepGoing = true;
 
-            //Console.WriteLine("\nNow let's get some spells!");
 
-            //Console.ReadLine();
+            while (keepGoing)
+            {
+                Console.WriteLine(lName);
+                // without changing Keepgoing to false this would keep printing out lname to the console
+                keepGoing = false;
+            }
 
-            //List<string> spellbook = new List<string>();
-            //List<string> spells = new List<string>() { "acid splash", "chill touch", "dancing lights", "druidcraft", "eldritch blast", "fire bolt", "guidance", "light", "mage hand", "mending", "message", "minor illusion", "poison spray", "prestidigitation", "produce flame", "ray of frost", "resistance", "sacred flame", "shillelagh", "shocking grasp", "spare the dying", "thaumaturgy", "true strike", "vicious mockery" };
-            //while (spellbook.Count < 5)
-            //{
-            //    int spellsneeded = 5 - spellbook.Count;
-            //    Console.WriteLine("Please add " + spellsneeded + " spells to your spellbook.\n(one at a time)\n");
-            //    Console.WriteLine("\nAcid Splash, Chill Touch, Dancing Lights, Druidcraft, Eldritch Blast, Fire Bolt, Guidance, Light, Mage Hand, Mending, Message, Minor Illusion, Poison Spray, Prestidigitation, Produce Flame, Ray of Frost, Resistance, Sacred Flame, Shillelagh, Shocking Grasp, Spare the Dying, Thaumaturgy, True Strike, Vicious Mockery\n");
-            //    string spellChosen = Console.ReadLine();
-            //    if (spells.Contains(spellChosen.ToLower()))
-            //    {
-            //        if (!spellbook.Contains(spellChosen))
-            //        {
-            //            spellbook.Add(spellChosen);
-            //        }
-            //        else
-            //        {
-            //            Console.WriteLine("\nYou've already chosen that spell, please choose another\n");
-            //        }
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine("Please choose a spell from the list:\n");
-            //    }
-            //}
+            Console.WriteLine("\nNow let's get some spells!");
 
-            //Console.WriteLine("\nHere are your spells:");
-            //foreach (string spell in spellbook)
-            //{
-            //    Console.WriteLine(spell);
-            //}
+            Console.ReadLine();
 
-            //Console.WriteLine("\n\nNow let's add to our inventory!\n\n");
-            //Console.ReadLine();
+            List<string> spellbook = new List<string>();
+            List<string> spells = new List<string>() { "acid splash", "chill touch", "dancing lights", "druidcraft", "eldritch blast", "fire bolt", "guidance", "light", "mage hand", "mending", "message", "minor illusion", "poison spray", "prestidigitation", "produce flame", "ray of frost", "resistance", "sacred flame", "shillelagh", "shocking grasp", "spare the dying", "thaumaturgy", "true strike", "vicious mockery" };
+            while (spellbook.Count < 5)
+            {
+                int spellsneeded = 5 - spellbook.Count;
+                Console.WriteLine("Please add " + spellsneeded + " spells to your spellbook.\n(one at a time)\n");
+                Console.WriteLine("\nAcid Splash, Chill Touch, Dancing Lights, Druidcraft, Eldritch Blast, Fire Bolt, Guidance, Light, Mage Hand, Mending, Message, Minor Illusion, Poison Spray, Prestidigitation, Produce Flame, Ray of Frost, Resistance, Sacred Flame, Shillelagh, Shocking Grasp, Spare the Dying, Thaumaturgy, True Strike, Vicious Mockery\n");
+                string spellChosen = Console.ReadLine();
+                if (spells.Contains(spellChosen.ToLower()))
+                {
+                    if (!spellbook.Contains(spellChosen))
+                    {
+                        spellbook.Add(spellChosen);
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nYou've already chosen that spell, please choose another\n");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Please choose a spell from the list:\n");
+                }
+            }
+
+            Console.WriteLine("\nHere are your spells:");
+            foreach (string spell in spellbook)
+            {
+                Console.WriteLine(spell);
+            }
+
+            Console.WriteLine("\n\nNow let's add to our inventory!\n\n");
+            Console.ReadLine();
 
 
 
@@ -102,7 +111,6 @@ namespace ForLoop
             }
 
             bool adventuring = true;
-
             while (adventuring)
             {
                 Console.WriteLine("\n\nWhat would you like to do?\n(Search inventory, move foward, exit)\n");
@@ -153,6 +161,7 @@ namespace ForLoop
                 }
 
             }
+
 
             Console.ReadLine();
 
