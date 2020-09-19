@@ -11,8 +11,10 @@ namespace AbstractMethods
     {
         static void Main(string[] args)
         {
+            IQuittable quit = new Employee();
             Employee Sample = new Employee() { lastName = "Student", firstName = "Sample" };
             Sample.SayName();
+            quit.Quit();
             Console.ReadLine();
         }
     }
