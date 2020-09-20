@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace TwentyOne
+namespace Casino
 {
     public class Dealer
     {
@@ -20,6 +20,7 @@ namespace TwentyOne
             Console.WriteLine(card);
             using(StreamWriter file = new StreamWriter(@"C:\C-Shrap_Course\logs\log.txt", true))
             {
+                file.WriteLine(DateTime.Now);
                 file.WriteLine(card);
             }
             
