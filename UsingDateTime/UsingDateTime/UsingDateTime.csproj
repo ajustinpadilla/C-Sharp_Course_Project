@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9D54F290-5768-4921-8ADE-29B12CBD7A54}</ProjectGuid>
+    <ProjectGuid>{FF2C40F9-3A20-44FD-B1B8-4CD11AC96A93}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Te</RootNamespace>
-    <AssemblyName>Te</AssemblyName>
+    <RootNamespace>UsingDateTime</RootNamespace>
+    <AssemblyName>UsingDateTime</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
