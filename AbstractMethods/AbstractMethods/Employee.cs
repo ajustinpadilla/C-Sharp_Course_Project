@@ -13,6 +13,8 @@ namespace AbstractMethods
         public override void SayName()
         {
             base.SayName();
+            Console.WriteLine(firstName + " " + lastName);
+
         }
 
         public void Quit()

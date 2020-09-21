@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace AbstractMethods
 {
-    public class Person
+    public abstract class Person
     {
         public string firstName { get; set; }
         public string lastName { get; set; }
 
         public virtual void SayName()
         {
-            Console.WriteLine(firstName + " " + lastName);
         }
     }
 }
